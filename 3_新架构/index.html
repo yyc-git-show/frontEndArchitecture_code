@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+       ...
+    </header>
+
+
+    <section id="post">
+        <section class="firstLevelChartBody">
+            <div class="box">
+                <div class="firstLevelItem">
+                    <div class="row1">
+                        <h3>贴子审核量</h3>
+
+                        <div class="right">
+                            <div class="td">
+                                <span class="qushi">趋势</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <span id="post_check_firstLevelPage_num"></span>
+                    </div>
+                </div>
+                <div class="firstLevelItem">
+                    <div class="row1">
+                        <h3>贴子删除量</h3>
+
+                        <div class="right">
+                            <div class="td">
+                                <span class="qushi">趋势</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <span id="post_delete_firstLevelPage_num"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--数据项的secondLevelPage容器现在相互独立了-->
+
+        <section id="post_check_secondLevelPage_chartBody" class="secondLevelChartBody qushiBody">
+            <article>
+                <header>
+                    <button class="close" type="button">×</button>
+                    <h4></h4>
+                </header>
+                <section class="chartContainer">
+                    <article>
+                        <div class="loading"></div>
+                        <div id="post_check_secondLevelPage_chart"></div>
+                    </article>
+                </section>
+            </article>
+        </section>
+
+        <section id="post_delete_secondLevelPage_chartBody" class="secondLevelChartBody qushiBody">
+            <article>
+                <header>
+                    <button class="close" type="button">×</button>
+                    <h4></h4>
+                </header>
+                <section class="chartContainer">
+                    <article>
+                        <div class="loading"></div>
+                        <div id="post_delete_secondLevelPage_chart"></div>
+                    </article>
+                </section>
+            </article>
+        </section>
+
+        <!--删除一级页面的id前缀，因为"绘制选项趋势图"与选项Tab有关而与FirstLevelPage无关，因此该dom不再与FirstLevelPage对应-->
+
+        <!--<section id="post_firstLevelPage_chartBody" class="chartContainer">-->
+        <section id="post_chartBody" class="chartContainer">
+            <article>
+                <div class="loading"></div>
+                <div id="post_chart"></div>
+            </article>
+        </section>
+    </section>
+
+    <section id="comment">
+        <section class="firstLevelChartBody">
+            <div class="box">
+                <div class="firstLevelItem">
+                    <div class="row1">
+                        <h3>评论审核量</h3>
+
+                        <div class="right">
+                            <div class="td">
+                                <span class="qushi">趋势</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <span id="comment_check_firstLevelPage_num"></span>
+                    </div>
+                </div>
+                <div class="firstLevelItem">
+                    <div class="row1">
+                        <h3>评论删除量</h3>
+
+                        <div class="right">
+                            <div class="td">
+                                <span class="qushi">趋势</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <span id="comment_delete_firstLevelPage_num"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--数据项的secondLevelPage容器现在相互独立了-->
+        <section id="comment_check_secondLevelPage_chartBody" class="secondLevelChartBody qushiBody">
+            <article>
+                <header>
+                    <button class="close" type="button">×</button>
+                    <h4></h4>
+                </header>
+                <section class="chartContainer">
+                    <article>
+                        <div class="loading"></div>
+                        <div id="comment_check_secondLevelPage_chart"></div>
+                    </article>
+                </section>
+            </article>
+        </section>
+
+        <section id="comment_delete_secondLevelPage_chartBody" class="secondLevelChartBody qushiBody">
+            <article>
+                <header>
+                    <button class="close" type="button">×</button>
+                    <h4></h4>
+                </header>
+                <section class="chartContainer">
+                    <article>
+                        <div class="loading"></div>
+                        <div id="comment_delete_secondLevelPage_chart"></div>
+                    </article>
+                </section>
+            </article>
+        </section>
+
+        <!--删除一级页面的id前缀，因为"绘制选项趋势图"与选项Tab有关而与FirstLevelPage无关，因此该dom不再与FirstLevelPage对应-->
+
+        <section id="comment_chartBody" class="chartContainer">
+            <article>
+                <div class="loading"></div>
+                <div id="comment_chart"></div>
+            </article>
+        </section>
+    </section>
+</div>
+</body>
+</html>

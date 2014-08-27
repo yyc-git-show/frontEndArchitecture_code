@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <nav>
+            <ul>
+                <li class="select">发贴审核</li>
+            </ul>
+        </nav>
+
+        <!--此处选择日期-->
+        <div id="datepickerContainer">
+            <div class="wholeCell">
+                <div class="table">
+                ...
+
+                    <div class="cell2">
+                        <input type="text" id="datepicker" name="date" size="10"/>
+                    </div>
+
+                    <div class="button" onclick="controlDatePicker.goPrevDate(event);">
+                        &lt; 前一天
+                    </div>
+                    <div id="nextDay" class="button-disabled" onclick="controlDatePicker.goNextDate(event);">
+                        后一天&gt;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+        <section class="firstLevelChartBody">
+            <div class="box">
+                <div class="firstLevelItem">
+                    <div class="row1">
+                        <h3>贴子审核量</h3>
+
+                        <div class="right">
+                            <div class="td">
+                                <span class="qushi">趋势</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <!--此处显示审核量指定日期数据-->
+                        <span id="num"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--此处显示审核量指定日期范围的数据图表-->
+        <section class="secondLevelChartBody qushiBody">
+            <article>
+                <header>
+                    <button class="close" type="button">×</button>
+                    <h4 ></h4>
+                </header>
+                <section class="chartContainer">
+                    <article>
+                        <div class="loading"></div>
+                        <div id="chart"></div>
+                    </article>
+                </section>
+            </article>
+        </section>
+    </section>
+</div>
+
+<script>
+    $(function () {
+        main.init();
+    });
+</script>
+
+
+</body>
+</html>
