@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
     var FirstLevelPage = YYC.AClass(Page, {
         Init: function (tab) {
             this.base(tab, "firstLevelPage"); //传入页面id前缀
@@ -11,7 +11,7 @@
                 ...
             },
 
-            Virtual: {
+            Virtual: { 
                 P__showData: function (dataArr) {
                     var num = this._getNum(dataArr);
 
