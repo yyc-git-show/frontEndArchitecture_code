@@ -1,7 +1,7 @@
 (function () {
     var CommonFirstLevelPage = YYC.Class(FirstLevelPage, {
         Protected: {
-            P__getBeginDate: function (selectDate) {
+            P_getBeginDate: function (selectDate) {
                 return selectDate;
             }
         },

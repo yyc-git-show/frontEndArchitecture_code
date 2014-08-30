@@ -7,12 +7,12 @@
 ...
         },
         Protected: {
-            P__showPercent: function () {
+            P_showPercent: function () {
                 ...
             },
 
             Virtual: { 
-                P__showData: function (dataArr) {
+                P_showData: function (dataArr) {
                     var num = this._getNum(dataArr);
 
                     this._showNum(num);
@@ -20,7 +20,7 @@
             },
 
             Abstract: {
-                P__getBeginDate: function () {
+                P_getBeginDate: function () {
                 }
             }
         },
@@ -29,10 +29,10 @@
                 var self = this;
 
                 $.getJSON(this.P_ajaxData.url, {
-                    begin_date: this.P__getBeginDate(selectDate),
+                    begin_date: this.P_getBeginDate(selectDate),
                     end_date: selectDate
                 }, function (dataArr) {
-                    self.P__showData(dataArr);
+                    self.P_showData(dataArr);
                 });
             },
             getAndShowChart: function (selectDate) {

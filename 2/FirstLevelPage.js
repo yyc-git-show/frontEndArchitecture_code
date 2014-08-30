@@ -15,8 +15,8 @@
                     self = this;
 
                 //显示选项所有数据项的指定日期的数据
-                for (i in this.P__ajaxData) {
-                    if (this.P__ajaxData.hasOwnProperty(i)) {
+                for (i in this.P_ajaxData) {
+                    if (this.P_ajaxData.hasOwnProperty(i)) {
                         (function (ajaxData) {
                             $.getJSON(ajaxData.url, {
                                 begin_date: selectDate,
@@ -27,7 +27,7 @@
                                 self._showNum(num);
                                 ajaxData = null;
                             });
-                        }(this.P__ajaxData[i]));
+                        }(this.P_ajaxData[i]));
                     }
                 }
             },
